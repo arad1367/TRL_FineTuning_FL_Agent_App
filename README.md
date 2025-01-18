@@ -32,6 +32,9 @@ The repository contains two main Jupyter notebooks:
 - Training Method: Supervised Fine-tuning (SFT) with TRL
 - Architecture: QLoRA-based configuration
 
+The model architecture is illustrated below:
+![Qwen2-VL Model Architecture](Qwen2_VL.png)
+
 ## Dataset
 
 - Dataset: [Liechtenstein Tourist OCR Big Dataset](https://huggingface.co/datasets/arad1367/Liechtenstein_Tourist_OCR_Big_Dataset)
@@ -50,25 +53,31 @@ The model was fine-tuned using:
 
 Metrics progression over three epochs:
 1. First Epoch:
-   - BLEU: 0.0477
-   - ROUGE-L F1: 0.1797
-   - METEOR: 0.3768
+  - BLEU: 0.0477
+  - ROUGE-L F1: 0.1797
+  - METEOR: 0.3768
 
 2. Second Epoch:
-   - BLEU: 0.1495
-   - ROUGE-L F1: 0.3251
-   - METEOR: 0.6228
+  - BLEU: 0.1495
+  - ROUGE-L F1: 0.3251
+  - METEOR: 0.6228
 
 3. Third Epoch:
-   - BLEU: 0.1552
-   - ROUGE-L F1: 0.3268
-   - METEOR: 0.6246
+  - BLEU: 0.1552
+  - ROUGE-L F1: 0.3268
+  - METEOR: 0.6246
 
 ## Example Outputs
 
-The repository includes comparison outputs:
-- OutputMalbun.png: Comparison between base and fine-tuned model outputs for Malbun ski resort
-- AgentCellarPrince.png: SmoLAgent implementation output for the Cellars of the Prince of Liechtenstein
+The repository includes comparison outputs demonstrating the model's capabilities:
+
+1. Base Model vs Fine-tuned Model Comparison:
+  ![Malbun Ski Resort Comparison](OutputMalbun.png)
+  *Comparison between base and fine-tuned model outputs for Malbun ski resort*
+
+2. SmoLAgent Implementation:
+  ![Cellars Agent Output](AgentCellarPrince.png)
+  *SmoLAgent implementation output for the Cellars of the Prince of Liechtenstein*
 
 ## Resources
 
